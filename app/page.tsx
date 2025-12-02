@@ -1,17 +1,14 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 p-4 sm:p-8">
 
     <div className="text-lg text-gray-700 mb-8 max-w-4xl mx-auto">
-        <Image src={"/solicitor-lisa-tonge-logo.png"} alt="Lisa Tonge Solicitors Logo" width={200} height={100} />
         <p className="mt-8">
           <span className="font-bold">Lisa Tonge Solicitors</span> is currently undergoing an upgrade. <br />We&apos;re working hard to bring you a better online experience with a new website!</p>
     </div>
 
     <div className="max-w-4xl mx-auto mb-10 p-6 bg-white rounded-xl shadow-xl">
-        <h2 className="text-2xl font-bold text-pink-800 border-b-2 border-pink-800 pb-3 mb-5">
+        <h2 className="text-2xl font-bold text-pink-900 border-b-2 border-pink-800 pb-3 mb-5">
             Current Services
         </h2>
         <p className="text-gray-600 mb-4">
@@ -45,7 +42,12 @@ export default function Home() {
         </div>
     </div>
 
-    <iframe  className="mx-auto mb-10" scrolling="no" allowTransparency={true} src="https://cdn.yoshki.com/iframe/55845r.html"></iframe>
+    <iframe
+      className="mx-auto mb-10 overflow-hidden"
+      src="https://cdn.yoshki.com/iframe/55845r.html"
+      style={{ overflow: "hidden" }}
+      title="Yoshki Regulatory Badge"
+    ></iframe>
 
     <div className="max-w-4xl mx-auto p-6 bg-gray-200 rounded-xl shadow-md border-t-4 border-gray-400">
         <h3 className="text-2xl font-bold text-gray-800 mb-4">
