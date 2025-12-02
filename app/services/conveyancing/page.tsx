@@ -1,5 +1,10 @@
 import CallMeComp from "@/components/CallMe";
 
+export const metadata = {
+    title: "Conveyancing Services | Lisa Tonge Solicitors Worsley",
+    description: "High quality conveyancing services for property sales and purchases in Worsley, Manchester.",
+};
+
 export default function ConveyancingPage() {
             return (
                 <>

@@ -1,3 +1,9 @@
+
+export const metadata = {
+    title: "Privacy & Data Protection | Lisa Tonge Solicitors Worsley",
+    description: "Read our privacy and data protection policy. Lisa Tonge Solicitors, your trusted local legal partner in Worsley, Manchester.",
+};
+
 const PrivacyPage = () => {
     return (
         <section className="container my-12">

@@ -1,3 +1,9 @@
+
+export const metadata = {
+    title: "Regulatory Information | Lisa Tonge Solicitors Worsley",
+    description: "Regulatory details for Lisa Tonge Solicitors. SRA registered sole practitioner in Worsley, Manchester.",
+};
+
 const RegulatoryPage = () => {
     return (
         <div className="container my-12">

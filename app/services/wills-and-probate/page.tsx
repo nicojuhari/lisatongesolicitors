@@ -1,5 +1,10 @@
 import CallMeComp from "@/components/CallMe";
 
+export const metadata = {
+    title: "Wills & Probate | Lisa Tonge Solicitors Worsley",
+    description: "Wills, probate, and power of attorney services by Lisa Tonge Solicitors. Local legal help in Worsley, Manchester.",
+};
+
 const WillsAndProbatePage = () => {
     return (
         <>  

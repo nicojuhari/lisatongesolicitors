@@ -1,5 +1,11 @@
 import CallMeComp from "@/components/CallMe";
 
+
+export const metadata = {
+    title: "Business Documents | Lisa Tonge Solicitors Worsley",
+    description: "Custom business documents and contracts by Lisa Tonge Solicitors. Local legal services in Worsley, Manchester.",
+};
+
 const BusinessDocumentsPage = () => {
     return (
         <>

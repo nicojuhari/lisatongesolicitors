@@ -6,7 +6,7 @@ import { PhoneIcon } from "@phosphor-icons/react";
 const HeroComp = () => {
     return (
         <section className="hero bg-gray-100 text-white py-28 md:py-42 relative overflow-hidden">
-            <div className="inset-0 absolute" style={{backgroundImage: "url('/lisa-tonge-solicitors-manchester-hero-banner.webp')", backgroundSize: "cover", backgroundPosition: "left"}}></div>
+            <div className="inset-0 absolute" style={{backgroundImage: "url('/lisa-tonge-solicitors-manchester-hero-banner.webp')", backgroundSize: "cover", backgroundPosition: "right"}}></div>
             <div className="absolute inset-0 bg-gray-950/70"></div>
             <div className="container relative font-medium text-center">
                 <h1 className="text-4xl md:text-5xl mb-4">

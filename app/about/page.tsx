@@ -1,4 +1,10 @@
 import ConveyancingQuality from "@/components/ConveyancingQuality";
+
+export const metadata = {
+    title: "About Lisa Tonge Solicitors from Worsley Manchester",
+    description: "Learn about Lisa Tonge Solicitors, your local legal expert in Worsley, Manchester. Over 20 years of conveyancing and legal experience.",
+};
+
 const AboutPage = () => {
     return (
         <div className="container my-12">

@@ -1,3 +1,9 @@
+
+export const metadata = {
+    title: "Complaints Procedure | Lisa Tonge Solicitors Worsley",
+    description: "How to resolve complaints with Lisa Tonge Solicitors. Local legal service in Worsley, Manchester.",
+};
+
 const AnyProblemsPage = () => {
     return (
         <section className="container my-12">

@@ -1,5 +1,10 @@
 import CallMeComp from "@/components/CallMe";
 
+export const metadata = {
+    title: "Mortgages & Leases | Lisa Tonge Solicitors Worsley",
+    description: "Expert mortgage and lease legal services by Lisa Tonge Solicitors, serving Worsley, Manchester.",
+};
+
 const MortgagesPage = () => {
     return (
         <>
