@@ -17,19 +17,24 @@ import {
 
 const services = [
     {
-        title: "Mortgages",
-        href: "#mortgages",
+        title: "Mortgages and Leases",
+        href: "/services/mortgages-and-leases",
         description: "All mortgage-related legal services."
     },
     {
         title: "Wills and Probate",
-        href: "#wills",
+        href: "/services/wills-and-probate",
         description: "Wills, probate, and power of attorney."
     },
     {
         title: "Conveyancing",
-        href: "#conveyancing",
+        href: "/services/conveyancing",
         description: "Sales, purchases, property transfers."
+    },
+    {
+        title: "Business Documents",
+        href: "/services/business-documents",
+        description: "Legal documents for businesses, contracts, and agreements."
     },
 ];
 
@@ -67,7 +72,7 @@ const HeaderComp = () => {
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger>Services</NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-1">
+                                    <ul className="grid gap-2 md:w-[400px] grid-cols-1">
                                         {services.map((service) => (
                                             <ListItem key={service.title} title={service.title} href={service.href}>
                                                 {service.description}
@@ -86,9 +91,6 @@ const HeaderComp = () => {
                                     <Link href="/contacts" title="Contacts">Contacts</Link>
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <Link href="tel:+441612416118" title="Call us" className="font-bold text-pink-900 px-4 py-2">0161 241 6118</Link>
-                            </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
                 </nav>
@@ -96,11 +98,11 @@ const HeaderComp = () => {
                 <div className="md:hidden">
                     {!mobileOpen ? (
                         <button onClick={() => setMobileOpen(true)} aria-label="Open menu">
-                            <ListIcon size={32} />
+                            <ListIcon size={24} />
                         </button>
                     ) : (
                         <button onClick={() => setMobileOpen(false)} aria-label="Close menu">
-                            <XIcon size={32} />
+                            <XIcon size={24} />
                         </button>
                     )}
                 </div>

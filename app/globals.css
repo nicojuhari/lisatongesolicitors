@@ -91,12 +91,36 @@
     --color-pink-800: #a4104a;
     --color-pink-900: #710f35; /* main brand color */
     --color-pink-950: #540322;
+
+    --color-blue-50: #e8fffd;
+    --color-blue-100: #c5fffa;
+    --color-blue-200: #93fff5;
+    --color-blue-300: #48ffee;
+    --color-blue-400: #00fff3;
+    --color-blue-500: #00edff;
+    --color-blue-600: #00bbd6;
+    --color-blue-700: #0094ab;
+    --color-blue-800: #017689;
+    --color-blue-900: #055364; /* secondary brand color */
+    --color-blue-950: #004051;
 }
 .container {
-  width: calc(100% - 1rem);
+  width: calc(100% - 2rem);
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.page-title {
+  @apply text-3xl md:text-4xl font-semibold mb-8 text-center;
+}
+
+.subtitle {
+  @apply text-xl font-semibold text-blue-900 mb-2;
+}
+
+.section-title {
+  @apply text-3xl font-semibold mb-6;
 }
 
 .dark {
@@ -142,6 +166,6 @@ button {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground min-h-screen flex flex-col;
   }
 }
