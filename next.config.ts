@@ -30,6 +30,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/mortgages',
+        destination: '/services/mortgages-and-leases',
+        permanent: true,
+      },
+      {
         source: '/business-documents',
         destination: '/services/business-documents',
         permanent: true,
