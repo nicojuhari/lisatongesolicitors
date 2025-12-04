@@ -27,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="vXuudY3S9R6voiR14ZqjzUwIpKQClEF0vBhd3SNehd8" />
         <meta name="apple-mobile-web-app-title" content="LisaTonge" />
       </head>
       <body
