@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>     
         <HeroComp />
-        <section className="container grid md:grid-cols-2 gap-8 my-6">
-            <div className="space-y-6 text-center px-8 border p-6 bg-gray-50">
+        <section className="container grid md:grid-cols-2 gap-4 md:gap-8 my-4 md:my-8">
+            <div className="space-y-6 text-center px-8 border p-6 bg-gray-50 rounded">
                 <p> General Data Protection Regulation (GDPR) (Regulation (EU) 2016/679) Privacy Policy update</p>
                 <Button asChild variant="link">
                     <Link href="/privacy-and-data-protection" className="underline font-bold uppercase">
@@ -19,7 +19,7 @@ export default function Home() {
                     </Link>
                 </Button>
             </div>
-            <div className="space-y-6 text-center px-8 border p-6 bg-gray-50">
+            <div className="space-y-6 text-center px-8 border p-6 bg-gray-50 rounded">
                 <p className="font-bold text-pink-900">NOTE</p>
                 <p>
                     Lisa Tonge Solicitors is the registered name of the practice with SRA, trading also as Lisa Tonge Solicitor

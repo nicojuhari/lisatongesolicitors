@@ -29,7 +29,7 @@ const ServicesComp = ({ children } : { children: React.ReactNode }) => {
     return ( 
         <section className="container my-14 md:my-18">
             { children}
-            <ul className="text-center grid md:grid-cols-2 gap-6 md:gap-8">
+            <ul className="text-center grid md:grid-cols-2 gap-4 md:gap-8">
                 {links.map((service) => (
                     <li key={service.link} className="flex-1 w-full bg-gray-50 rounded">
                         <Link href={service.link} className="flex flex-col gap-4 items-center hover:underline py-8 md:p-6">
@@ -39,7 +39,7 @@ const ServicesComp = ({ children } : { children: React.ReactNode }) => {
                     </li>
                 ))}
             </ul>
-            <p className="text-center mt-10">
+            <p className="text-center mt-10 text-sm md:text-base">
                  <strong>Lisa Tonge Solicitors</strong> is registered with Lender Exchange and Lisa can also act in dealing with <strong>Help to Buy ISA bonuses.</strong>
             </p>
         </section>

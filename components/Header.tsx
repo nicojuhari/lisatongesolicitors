@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ListIcon, XIcon } from "@phosphor-icons/react";
+import { ListIcon, XIcon, PhoneIcon } from "@phosphor-icons/react";
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -14,6 +14,7 @@ import {
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { Button } from "./ui/button";
 
 const services = [
     {
@@ -132,8 +133,14 @@ const HeaderComp = () => {
                         <li>
                             <Link href="/contacts" title="Contacts" className="py-2 block">Contacts</Link>
                         </li>
-                        <li>
-                            <Link href="tel:+441612416118" title="Call us" className="font-bold text-pink-900 py-2 block">0161 241 6118</Link>
+                        <li className="w-full p-4 bg-gray-50 text-center border rounded">
+                            <span>Call Me For Your Free Quotation</span>
+                                <Button asChild>
+                                <Link  href="tel:+441612416118" className="w-full mt-4">
+                                    <PhoneIcon size={22} className="inline-block ml-2" /> 
+                                    <span className="inline-block mr-2">0161 241 6118</span>
+                                </Link>
+                            </Button>
                         </li>
                     </ul>
                 </nav>
