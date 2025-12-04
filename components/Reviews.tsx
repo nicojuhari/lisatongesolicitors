@@ -76,7 +76,7 @@ const ReviewsComp = () => {
     return (
         <section className="container my-14 md:my-18 overflow-hidden">
             <h2 className="section-title text-center">Client Reviews</h2>
-            <Carousel className="w-full relative" setApi={setCarouselApi}>
+            <Carousel className="w-full relative" setApi={setCarouselApi} opts={{ loop: true }}>
                 <CarouselContent>
                     {reviews.map((review, idx) => (
                         <CarouselItem key={idx} className="flex flex-col items-center sm:basis-1/2 md:basis-1/3 p-4">
@@ -85,7 +85,7 @@ const ReviewsComp = () => {
                                     <StarIcon key={i} weight="fill" className="w-5 h-5 text-yellow-400 fill-yellow-400 mr-0.5" />
                                 ))}
                             </div>
-                            <blockquote className="text-lg italic text-gray-800 mb-4">“{review.text}”</blockquote>
+                            <blockquote className="italic text-gray-600 mb-4">“{review.text}”</blockquote>
                             <p className="text-pink-900 font-semibold mt-auto">{review.reviewer}</p>
                         </CarouselItem>
                     ))}
