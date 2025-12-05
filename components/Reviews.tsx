@@ -42,6 +42,10 @@ const reviews = [
         reviewer: "CB, Salford",
     },
     {
+        text: "Excellent service.",
+        reviewer: "DH, Worsley",
+    },
+    {
         text: "Lisa Tonge provides a quick, friendly service. Excellent communication through process.",
         reviewer: "AZ, Walkden",
     },
@@ -52,11 +56,7 @@ const reviews = [
     {
         text: "Good communication with each step of the process, easily contactable and provided a thorough efficient service.",
         reviewer: "AD, Boothstown",
-    },
-    {
-        text: "Excellent service.",
-        reviewer: "DH, Worsley",
-    },
+    }
 ];
 
 
@@ -69,29 +69,29 @@ const ReviewsComp = () => {
             if (carouselApi && typeof carouselApi.scrollNext === "function") {
                 carouselApi.scrollNext();
             }
-        }, 4000); // 4 seconds
+        }, 3600); // 3.6 seconds
         return () => clearInterval(interval);
     }, [carouselApi]);
 
     return (
-        <section className="container my-14 md:my-18 overflow-hidden">
-            <h2 className="section-title text-center">Client Reviews</h2>
+        <section className="container my-6 md:my-10 overflow-hidden">
+            {/* <h2 className="subtitle text-center">Client Reviews</h2> */}
             <Carousel className="w-full relative" setApi={setCarouselApi} opts={{ loop: true }}>
                 <CarouselContent>
                     {reviews.map((review, idx) => (
-                        <CarouselItem key={idx} className="flex flex-col items-center sm:basis-1/2 md:basis-1/3 p-4">
+                        <CarouselItem key={idx} className="flex flex-col items-center sm:basis-1/2 md:basis-1/3">
                             <div className="flex items-center mb-2" aria-label="5 star review">
                                 {Array.from({ length: 5 }).map((_, i) => (
                                     <StarIcon key={i} weight="fill" className="w-5 h-5 text-yellow-400 fill-yellow-400 mr-0.5" />
                                 ))}
                             </div>
-                            <blockquote className="italic text-gray-600 mb-4">“{review.text}”</blockquote>
+                            <blockquote className="italic text-gray-600 mb-4 text-sm md:text-base">{review.text}</blockquote>
                             <p className="text-pink-900 font-semibold mt-auto">{review.reviewer}</p>
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                {/* <CarouselPrevious />
+                <CarouselNext /> */}
             </Carousel>
         </section>
     );

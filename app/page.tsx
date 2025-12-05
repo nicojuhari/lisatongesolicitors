@@ -10,7 +10,8 @@ export default function Home() {
   return (
     <>     
         <HeroComp />
-        <section className="container grid md:grid-cols-2 gap-4 md:gap-8 my-4 md:my-8">
+        <ReviewsComp />
+        <section className="container grid md:grid-cols-2 gap-4 md:gap-8 my-6 md:my-10">
             <div className="space-y-6 text-center px-8 border p-6 bg-gray-50 rounded">
                 <p> General Data Protection Regulation (GDPR) (Regulation (EU) 2016/679) Privacy Policy update</p>
                 <Button asChild variant="link">
@@ -29,7 +30,6 @@ export default function Home() {
         <ServicesComp>
             <h2 className="section-title text-center">Business and Personal Legal Services</h2>
         </ServicesComp>
-        <ReviewsComp />
         <CallMeComp />
         <section className="py-14 md:py-18 bg-blue-900 text-white">
             <div className="container">

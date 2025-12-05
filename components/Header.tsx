@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ListIcon, XIcon, PhoneIcon } from "@phosphor-icons/react";
 import {
@@ -63,8 +62,8 @@ const HeaderComp = () => {
     return (
         <div className="bg-white border-b border-gray-200 shadow-xs">
             <header className="container flex items-center justify-between py-4 h-14">
-                <Link href="/" className="flex items-center space-x-2">
-                <Image src={"/solicitor-lisa-tonge-logo.png"} alt="Lisa Tonge Solicitors Logo" width={160} height={40} />
+                <Link href="/" className="flex-1 flex items-center space-x-2">
+                    <img src="/solicitor-lisa-tonge-logo.png" alt="Lisa Tonge Solicitors Logo" className="h-10 md:h-12 w-auto"/>
                 </Link>
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex flex-1 justify-end">

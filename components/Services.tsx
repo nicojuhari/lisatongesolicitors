@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { HouseIcon, PresentationChartIcon, ArchiveIcon, FilesIcon, BankIcon } from "@phosphor-icons/react";
+import { HouseIcon, PresentationChartIcon, ArchiveIcon, BankIcon } from "@phosphor-icons/react";
 
 const ServicesComp = ({ children } : { children: React.ReactNode }) => {
 
